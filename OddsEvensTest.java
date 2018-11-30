@@ -11,6 +11,9 @@ import org.junit.Test;
  */
 public class OddsEvensTest
 {
+    /**
+     * Testing the count method.
+     */
     @Test(timeout=2000)
     public void countTest()
     {
@@ -33,7 +36,10 @@ public class OddsEvensTest
         assertEquals( "Counting odds in an array of a single odd failed.", 1, OddsEvens.count( singleOdd, true ) );
         assertEquals( "Counting evens in an array of a single odd failed.", 0, OddsEvens.count( singleOdd, false ) );
     }
-
+    
+    /**
+     * Testing the getAllEvens method.
+     */
     @Test(timeout=2000)
     public void getAllEvensTest()
     {
@@ -55,6 +61,9 @@ public class OddsEvensTest
         assertArrayEquals( "getAllEvens() with an array of a single odd failed.",singleOddResult, OddsEvens.getAllEvens( singleOdd ) );
     }
     
+    /**
+     * Testing the getAllOdds method.
+     */
     @Test(timeout=2000)
     public void getAllOddsTest()
     {
